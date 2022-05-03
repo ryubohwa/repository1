@@ -10,6 +10,7 @@
 </head>
 <body>
 <%-- 링크 있는 친구들 링크 안 걸었다. --%>
+	<img class="dalDongHee" src="http://localhost:9000/manwol/resources/images/cs-_.png" alt="상담해주는 달동희(대표 캐릭터)">
 
 	<footer>
 		<div>

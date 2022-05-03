@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;}
+li{list-style-type: none;}
+a[href] {text-decoration: none;}
+
+hr.adminHr{
+	border: 1px #e7e7e7 solid;
+}
+
+div.adminWrap{ /*합칠 때 곤란할 것 같아서 div로 나눴음 */
+	background: #F2F2F2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+div.adminWrap>div{
+	width: 63em; height: 240px;
+	margin-top: 50px;
+	margin-left: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+
+div.adminWrap>div:first-of-type {
+	background: #fff;
+}
+
+div.adminWrap>div.welcome>div>img{
+	border-radius: 50%;
+	border:1px black solid;
+	width: 90px; height: 90px;
+	margin: 0 30px 0 40px;
+}
+
+div.adminWrap>div.welcome>div>p{
+	margin-bottom: 5px;
+}
+
+div.adminWrap>div.welcome>div>p:first-of-type{
+	font-size: 13pt;
+}
+
+div.adminWrap>div.welcome>div>p:first-of-type>span{
+	color: #0042A9;
+}
+
+div.adminWrap>div:not(:first-of-type){
+	margin-bottom: 50px;
+}
+
+div.adminWrap>div:not(:first-of-type)>ul>li{
+	background: rgb(10,33,85);
+	margin-bottom: 10px;
+	padding: 15px;
+	width: 61em;/*임시*/
+}
+
+div.adminWrap>div:not(:first-of-type)>ul>li:hover{
+	background: rgba(10,33,85,0.5);
+}
+
+div.adminWrap>div:not(:first-of-type)>ul>li>a{
+	display: block;
+	color:#fff;
+}

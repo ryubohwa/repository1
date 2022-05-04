@@ -20,16 +20,16 @@ public class ProductController {
       return "/product/product_goods";
    }
    
-   @RequestMapping("product_present")
-   public String product_present() {
+   @RequestMapping("product_gift")
+   public String product_gift() {
          
-      return "/product/product_present";
+      return "/product/product_gift";
    }         
 
-   @RequestMapping("product_shot")
-   public String product_shot() {
+   @RequestMapping("product_base")
+   public String product_base() {
          
-      return "/product/product_shot";
+      return "/product/product_base";
    }  
 }
    

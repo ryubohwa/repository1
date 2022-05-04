@@ -11,5 +11,13 @@ public class AdminController {
 		return "/admin/admin";
 	}
 	
+	@RequestMapping(value="/admin/member_list", method=RequestMethod.GET)
+	public String member_list() {
+		return "/admin/member/member_list";
+	}
 
+	@RequestMapping(value="/admin/product_list", method=RequestMethod.GET)
+	public String product_list() {
+		return "/admin/product/product_list";
+	}
 }

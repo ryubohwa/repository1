@@ -8,7 +8,7 @@ hr.adminHr{
 	border: 1px #e7e7e7 solid;
 }
 
-div.adminWrap{ /*합칠 때 곤란할 것 같아서 div로 나눴음 */
+div.adminWrap{ /*css 합칠 때 곤란할 것 같아서 div로 나눴음 */
 	background: #F2F2F2;
 	display: flex;
 	align-items: center;
@@ -32,20 +32,20 @@ div.adminWrap>div:first-of-type {
 
 div.adminWrap>div.welcome>div>img{
 	border-radius: 50%;
-	border:1px black solid;
+	/* border:1px black solid; */
 	width: 90px; height: 90px;
 	margin: 0 30px 0 40px;
 }
 
 div.adminWrap>div.welcome>div>p{
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 
 div.adminWrap>div.welcome>div>p:first-of-type{
-	font-size: 13pt;
+	font-size: 16pt;
 }
 
-div.adminWrap>div.welcome>div>p:first-of-type>span{
+div.adminWrap>div.welcome>div>p:first-of-type>a>span{
 	color: #0042A9;
 }
 
@@ -57,7 +57,7 @@ div.adminWrap>div:not(:first-of-type)>ul>li{
 	background: rgb(10,33,85);
 	margin-bottom: 10px;
 	padding: 15px;
-	width: 61em;/*임시*/
+	width: 61.2em;/*임시*/
 }
 
 div.adminWrap>div:not(:first-of-type)>ul>li:hover{

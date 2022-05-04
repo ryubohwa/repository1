@@ -14,7 +14,7 @@
 		<div>
 			<nav>
 				<ul class="menu" id="menu1"> 
-					<li class="mainpage"><h1><a href="http://localhost:9000/manwol/index">카페 만월회</a></h1></li>
+					<li class="mainpage"><a href="http://localhost:9000/manwol/index">카페 만월회</a></li>
 					<li><a href="#">첫 구매라면?</a></li>
 					<li class="dropdown">
 						<a href="#">Shop</a>

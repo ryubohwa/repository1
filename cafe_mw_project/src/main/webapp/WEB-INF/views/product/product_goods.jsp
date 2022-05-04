@@ -5,95 +5,64 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script src="https://kit.fontawesome.com/def66b134a.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="http://localhost:9000/manwol/resources/css/product.css">
+<link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <style type="text/css">
-	*{margin: 0 ; padding: 0;}
-	li{list-style-type:none}
-
-	.category {
-      display: flex;
-      }   
-	.category span {
-      padding-right:30px;
-      color: graytext;
-      
-      }
-	
-	<%--카테고리 클릭시 밑줄 들어가게 --%>
-	.category a:active{ 
-		color:Black; 
-		text-decoration:underline;
-		}
-
-
-	<%--이미지 눌렀을때 불투명하게 --%>
-	.contents img{
-		opacity: 1;
- 		filter:alpha(opacity=100);
+	.contents {
+	  margin-top: 30px;
 	}
-	
-	.contents img:hover{
-		opacity: 0.7;
-		filter:alpha(opacity=75);
-	}	
-		
-		
-	#percent{
-	 color: #FF0000;
-	}		
-	
-	
-	
 </style>
 </head>
 <body>
 	<!-- header -->
 	<jsp:include page="../header.jsp"></jsp:include>
 	
+	
 	<!-- content -->
 		<div>
 			<ul class="category">
-				<li><a href="#"><span>ALL</span></a></li>
-				<li><a href="#"><span>만월 원액</span></a></li>
-				<li><a href="#"><span>만월 굿즈</span></a></li>
-				<li><a href="#"><span>선물하기</span></a></li>
+				<li><a href="http://localhost:9000/manwol/product_all.do"><span>ALL</span></a></li>
+				<li><a href="http://localhost:9000/manwol/product_base.do"><span>만월 원액</span></a></li>
+				<li class="category_line"><a href="http://localhost:9000/manwol/product_goods.do"><span>만월 굿즈</span></a></li>
+				<li><a href="http://localhost:9000/manwol/product_gift.do"><span>선물하기</span></a></li>
 				<li><a href="#"><span>단체주문</span></a></li>
 			</ul>
 		</div>
-		<br>
+		
+		<div class="contents_line"></div>
 
-
-		<div class="contents2">  
-          	   
-          	   <div class="contents">
-                  <img alt="리겔: 눈금 계량컵" src="#" height="300px" width="300px"> 
-                  <h2>리겔: 눈금 계량컵</h2>                 
+			<div class="contents">
+          	   <div class="contents1">
+                  <img class="re" alt="리겔: 눈금 계량컵" src="http://localhost:9000/manwol/resources/images/리겔 눈금 계량컵.png" height="300px" width="300px"> 
+                  <h5>리겔: 눈금 계량컵</h5>                 
                   <p>19,900원</p>
-                  <br>
-                 <i class="fa-thin fa-comment">140</i>
-                 <i class="fa-thin fa-cart-shopping">Cart</i>
+                  <p>
+                 	<small class="material-symbols-outlined" style="font-size: 15px">chat_bubble</small>140
+                 	<small class="material-symbols-outlined" style="font-size: 15px">shopping_cart</small>Cart
+                  </p>		
                </div>       
                
-          	   <div class="contents">
-                  <img alt="카프: 우유곽 글라스" src="#" height="300px" width="300px"> 
-                  <h2>카프: 우유곽 글라스</h2>                 
+          	   <div class="contents1">
+                  <img class="re" alt="카프: 우유곽 글라스" src="http://localhost:9000/manwol/resources/images/카프 우유곽 글라스.png" height="300px" width="300px"> 
+                  <h5>카프: 우유곽 글라스</h5>                 
                   <p>8,000원</p>
-                  <br>
-                 <i class="fa-thin fa-comment">6</i>
-                 <i class="fa-thin fa-cart-shopping">Cart</i>
+                  <p>
+                  	<small class="material-symbols-outlined" style="font-size: 15px">chat_bubble</small>6
+                 	<small class="material-symbols-outlined" style="font-size: 15px">shopping_cart</small>Cart
+				  </p>               
                </div>    
                
-               <div class="contents">
-                  <img alt="베가: 미니계량컵" src="#" height="300px" width="300px"> 
-                  <h2>베가: 미니계량컵</h2>                 
+               <div class="contents1">
+                  <img class="re" alt="베가: 미니계량컵" src="http://localhost:9000/manwol/resources/images/베가 미니계량컵.png" height="300px" width="300px"> 
+                  <h5>베가: 미니계량컵</h5>                 
                   <p>2,500원</p>
-                  <br>
-                 <i class="fa-thin fa-comment">36</i>
-                 <i class="fa-thin fa-cart-shopping">Cart</i>
-               </div>
-               
-                 
-       </div>        
+                  <p>
+                 	<small class="material-symbols-outlined" style="font-size: 15px">chat_bubble</small>36
+                 	<small class="material-symbols-outlined" style="font-size: 15px">shopping_cart</small>Cart
+                  </p>	
+               </div>  
+          </div>          
 
 	
 	<!--  footer -->
